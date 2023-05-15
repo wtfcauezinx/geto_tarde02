@@ -1,0 +1,561 @@
+/* impotanto a tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&family=Poppins&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    resize: none;
+}
+
+/*variaveis css*/
+:root {
+    --font_bebas: 'Bebas Neue', cursive;
+    --font_mont: 'Montserrat', sans-serif;
+    --verde: #493426;
+    --branco_pastel: #EEE5DA;
+    --font_poppins: 'Poppins', sans-serif;
+    --font_mega: 'Lexend Mega', sans-serif;
+
+
+
+}
+
+
+.alinhamento {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* cabeçario */
+
+header {
+    background-color: var(--verde);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.logo {
+    width: 300px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#burguer {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+    width: 700px;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 25PX;
+    font-family: var(--font_poppins);
+
+
+}
+
+.menu a:hover {
+    border-bottom: 2px solid var(--branco_pastel);
+    color: var(--branco_pastel);
+}
+
+/* ---------quem somos-------- */
+
+main {
+    background-color: var(--branco_pastel);
+}
+
+h1 {
+    position: absolute;
+    left: -999em;
+    width: 1em;
+    overflow: hidden;
+}
+
+.quem_somos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.primeira_foto {
+    width: 400px;
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 70px;
+}
+
+.sobre {
+    text-align: center;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.sobre_titulo {
+    font-family: 'Lexend Mega', sans-serif;
+    font-size: 60px;
+}
+
+
+.sobre_texto {
+    font-family: var(--font_poppins);
+    font-size: 30px;
+}
+
+.btn_esg {
+    background: #518F4B;
+    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    box-shadow: 5px 5px 40px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn_esg a {
+    color: white;
+    text-decoration: none;
+}
+
+/* data de lançamento */
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font_poppins);
+    font-size: 90px;
+    color: var(--branco_pastel);
+    background-color: var(--verde);
+    padding: 100px;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+
+/* -----imagens------ */
+
+.imagens {
+    background-color: var(--verde);
+    padding-bottom: 100px;
+
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imgs>* {
+    width: 370px;
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.4)
+}
+
+.esg {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.sobre_esg {
+    text-align: center;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.sobre_esg_titulo {
+    font-family: 'Lexend mega', sans-serif;
+
+    font-size: 60px;
+}
+
+.sobre_esg_texto {
+    font-family: var(--font_poppins);
+    font-size: 30px;
+}
+
+.esg img {
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 70px;
+    height: 500px;
+}
+
+/* -----formulario------ */
+.formulario {
+    background-color: var(--verde);
+    padding: 100px 0;
+}
+
+.formulario_titulo {
+    font-family: var(--font_mega);
+    font-size: 60px;
+    color: var(--branco_pastel);
+    text-align: center;
+    margin: 15px;
+
+}
+
+form {
+    color: white;
+    font-family: var(--font_mont);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 25px;
+}
+
+input {
+    height: 35px;
+    padding: 20px;
+}
+
+textarea {
+    padding: 20px;
+
+}
+
+.borda {
+    border: 1px solid var(--branco_pastel);
+    border-radius: 15px;
+}
+
+.btn_forms {
+    background-color: white;
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    color: var(--verde);
+    margin: 0 auto;
+}
+
+/* -----contato------ */
+
+.mapa {
+    width: 580px;
+
+}
+
+.contato {
+    padding: 100px 0;
+}
+
+.contato_titulo {
+    font-family: var(--font_poppins);
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.conteudo_contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.borda_mapa {
+    border: 5px solid var(--verde);
+    width: 700px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.contato_info {
+    font-family: 'Lexend Mega', sans-serif;
+
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info>i {
+    margin-right: 20px;
+    color: var(--verde);
+
+}
+
+.info p {
+    font-family: var();
+}
+
+/* footer */
+
+footer {
+    background-color: var(--verde);
+    color: white;
+    font-family: var(--font_mont);
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* responsividade */
+/* largura das telas
+
+pequenas telas: até 600px
+celular: de 600px ate 768px
+tablet: 768px ate 992px
+desktop: 992px ate 1200px
+grandes telas: acima de 1200px */
+
+
+
+@media screen and (max-width:1440px) {
+    .alinhamento {
+        width: 100%;
+
+    }
+
+    nav {
+        padding: 0 50px;
+    }
+
+    .sobre {
+        max-width: 500px;
+    }
+
+    .quem_somos {
+        padding: 100px 50px;
+    }
+
+    .imgs {
+        flex-wrap: wrap;
+    }
+
+    .sobre_esg_texto {
+        font-size: 26px;
+    }
+
+    .esg img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .esg {
+        padding: 100px 50px;
+        gap: 30px;
+    }
+
+}
+
+
+
+    @media screen and (max-width: 1200px) {
+
+        .alinhamento {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .primeira_foto {
+            width: 440px;
+        }
+
+        .esg img {
+            width: 45%;
+        }
+
+        .sobre_esg {
+            width: 480px;
+        }
+
+        .sobre_esg_texto {
+            font-size: 22px;
+        }
+
+    }
+
+
+
+@media screen and (max-width: 900px) {
+
+    .menu a {
+        font-size: 20px;
+    }
+
+    .quem_somos {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .sobre {
+        margin-top: 30px;
+    }
+
+    .imgs {
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .data {
+        font-size: 60px;
+    }
+
+    .esg {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .sobre_esg {
+        width: 600px;
+    }
+
+    .conteudo_contato {
+        flex-direction: column-reverse;
+        gap: 50px;
+
+    }
+
+    .alinhamento {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #burguer {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #burguer {
+        color: white;
+        font-size: 55px;
+        display: block;
+
+    }
+
+    #itens {
+        position: absolute;
+        /* viewport height (vh); */
+        height: 92vh;
+        /* viewport width (vw) */
+        width: 50vw;
+        top: 16vh;
+        right: 0;
+        background-color: var(--verde);
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+    .menu li {
+        padding: 50px;
+
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    .data {
+        font-size: 50px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 580px) {
+
+    .primeira_foto {
+        width: 550px;
+    }
+
+    .data {
+        font-size: 34px;
+
+    }
+
+    .esg img {
+        padding: 0 40px;
+    }
+
+    .sobre_esg_texto {
+        padding: 0 30px;
+    }
+
+    .mapa {
+        width: 400px;
+    }
+
+    .borda_mapa {
+        width: 480px;
+    }
+
+    .conteudo_contato {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+
+
+
+
+
+}
